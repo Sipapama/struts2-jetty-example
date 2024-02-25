@@ -26,16 +26,16 @@ public class InvoiceAction extends ActionSupport  {
             addFieldError("invoiceBean.subject", "El concepto es obligatorio.");
         }
         if(invoiceBean.getDateFrom()==null) {
-            addFieldError("invoiceBeam.dateFrom", "Introduzca una fecha.");
+            addFieldError("invoiceBean.dateFrom", "Introduzca una fecha.");
         }
         if(invoiceBean.getDateTo()==null) {
-            addFieldError("invoiceBeam.dateTo", "Introduzca una fecha.");
+            addFieldError("invoiceBean.dateTo", "Introduzca una fecha.");
         }
         if(invoiceBean.getImporteBruto().isEmpty()) {
-            addFieldError("invoiceBeam.importeBruto", "Introduzca un importe");
+            addFieldError("invoiceBean.importeBruto", "Introduzca un importe");
         }
         if(invoiceBean.getTipoIVA().isEmpty()) {
-            addFieldError("invoiceBeam.tipoIVA", "Introduzca el tipo de IVA");
+            addFieldError("invoiceBean.tipoIVA", "Introduzca el tipo de IVA");
         }
     }
 }
