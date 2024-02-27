@@ -6,16 +6,35 @@ public class InvoiceBean {
     private String subject;
     private Date dateFrom;
     private Date dateTo;
-    private String importeBruto;
-    private String tipoIVA;
+    private double importeBruto;
+    private Integer tipoIVA;
+    private double importeIVA;
+    private double importeTotal;
 
-    public String getImporteBruto() {
+
+    public double getImporteBruto() {
         return importeBruto;
     }
-    public void setImporteBruto(String importeBruto) {
+
+    public void setImporteBruto(double importeBruto) {
         this.importeBruto = importeBruto;
     }
-     public Date getDateFrom() {
+
+    public double getImporteIVA() {
+        return importeIVA;
+    }
+    public void setImporteIVA(double importeIVA) {
+        this.importeIVA = importeIVA;
+    }
+    public double getImporteTotal() {
+        return importeTotal;
+    }
+    public void setImporteTotal(double importeTotal) {
+        this.importeTotal = importeTotal;
+    }
+
+
+    public Date getDateFrom() {
         return dateFrom;
     }
     public void setDateFrom(Date dateFrom) {
@@ -33,10 +52,10 @@ public class InvoiceBean {
     public void setSubject(String subject) {
         this.subject = subject;
     }
-    public String getTipoIVA() {
+    public Integer getTipoIVA() {
         return tipoIVA;
     }
-    public void setTipoIVA(String tipoIVA) {
+    public void setTipoIVA(Integer tipoIVA) {
         this.tipoIVA = tipoIVA;
     }
 }

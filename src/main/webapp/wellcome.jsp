@@ -11,7 +11,6 @@
 </head>
 
 <body>
-
     <h1>Resumen de factura: </h1>
     <b><label>Concepto: </label></b>
     <s:property value="invoiceBean.subject" /><br>
@@ -23,6 +22,9 @@
     <s:property value="invoiceBean.importeBruto" /><br>
     <b><label>IVA (%): </label></b>
     <s:property value="invoiceBean.tipoIVA" /><br>
-
+    <b><label>Importe IVA: </label></b>
+    <s:property value="invoiceBean.importeIVA" /><br>
+    <b><label>Importe TOTAL: </label></b>
+    <s:property value="invoiceBean.importeTotal" /><br>
 </body>
 </html>
